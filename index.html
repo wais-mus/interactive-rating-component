@@ -6,44 +6,60 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="stylesheet" href="style.css">
+ 
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <!-- Rating state start -->
 
-  How did we do?
+  <div class="main-container">
+    <img src="./images/icon-star.svg" alt="icon-star">
+   <h1>How did we do?</h1>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+   <p>Please let us know how we did with your support request. All feedback is appreciated 
+   to help us improve our offering!</p>
 
-  1 2 3 4 5
+   <ul>
+   <li><button class="btn">1</button></li>
+   <li><button class="btn">2</button></li>
+   <li><button class="btn">3</button></li>
+   <li><button class="btn">4</button></li>
+   <li><button class="btn">5</button></li>
+   </ul>
+   
 
-  Submit
+   <button class="button btn-submit" id="submit">Submit</button>
+ </div>
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+  <div class="thank-you hidden">
+    <img src="./images/illustration-thank-you.svg" alt="thank-you-img">
+    <p class="gray">
+      You selected
+      <span id="rating">5</span>
+      out of 5
+    </p>
+  
+    <h2>Thank you!</h2>
 
-  Thank you!
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
+    <button class="btn-submit" id="rate-again">Rate Again</button>
+  </div>
   <!-- Thank you state end -->
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/wais-mus">Wais Abubakar</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
